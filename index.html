@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>金剛般若波羅蜜經</title>
+  <!-- Tailwind CDN（便於直接續寫） -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    rt{font-size:.7em;color:#0a7f6f}
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+  <main class="max-w-4xl mx-auto px-4 py-6">
+    <!-- 頁首 -->
+    <header class="mb-6">
+      <h1 class="text-2xl font-extrabold tracking-tight">金剛般若波羅蜜經</h1>
+      <p class="mt-1 text-sm text-slate-600">姚秦 · 三藏法師 <ruby>鳩<rt>jiū</rt></ruby><ruby>摩<rt>mó</rt></ruby><ruby>羅<rt>luó</rt></ruby><ruby>什<rt>shí</rt></ruby> 譯</p>
+    </header>
+
+    <!-- 背景知識 -->
+    <section class="mb-6 rounded-xl border border-emerald-200 bg-emerald-50/60 p-4">
+      <h2 class="text-lg font-semibold text-emerald-800">背景知识</h2>
+      <div class="mt-2 text-[15px] leading-6">
+        <p><strong>金剛 (Vajra):</strong> 原意为“金刚石”“雷电之杵”，象征坚固、能摧破一切而不被摧破。</p>
+        <p><strong><ruby>般<rt>bō</rt></ruby><ruby>若<rt>rě</rt></ruby> (Prajñā):</strong> 智慧，最高的觉悟之智。</p>
+        <p><strong>波羅蜜 (Pāramitā):</strong> 到彼岸、圆满；经：经典之意，为佛陀或弟子记录的教诲。</p>
+        <p><strong>經:</strong> 在中国文化里，经指经典、常道、根本之书；佛教语境中对应梵文 <em>Sūtra</em>，常见为对话体，《金刚经》中由须菩提问、佛陀答，核心在传播智慧与修行方法。</p>
+        <p><strong>佛陀:</strong> 释迦牟尼佛，本经的说法者。</p>
+        <p><strong>须菩提:</strong> 以解空著称的弟子，本经主要提问者。</p>
+        <p><strong>阿难:</strong> 佛陀侍者，记忆与传诵者，因此经首有“如是我闻”。</p>
+        <p><strong>姚秦:</strong> 十六国之一，鸠摩罗什于其时在长安译经。</p>
+        <p><strong>三<ruby>藏<rt>zàng</rt></ruby>法师:</strong> 精通经律论者，此处特指鸠摩罗什。<ruby>藏<rt>zàng</rt></ruby>经阁，存放经藏的地方。佛教经典分为三大类，经藏、律藏和论藏，这里的藏是名词，汇编，总集，对应英文就是collection。</p>
+      </div>
+    </section>
+
+    <!-- 操作按鈕：顯示/隱藏 譯文與備註 -->
+    <div class="mb-4 flex gap-2">
+      <button id="toggleYiwen" class="rounded-lg border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50">切換譯文顯示</button>
+      <button id="toggleNote" class="rounded-lg border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50">切換備註顯示</button>
+      <button id="toggleRuby" class="rounded-lg border border-slate-300 px-3 py-1.5 text-sm hover:bg-slate-50">切換注音</button>
+    </div>
+
+    <!-- 第一品 -->
+    <section class="rounded-2xl border border-slate-200 p-4">
+      <h2 class="text-lg font-semibold">第一品 法會因由分</h2>
+      <div class="mt-3 grid gap-3 md:grid-cols-2">
+        <!-- 原文（繁） -->
+        <blockquote class="rounded-lg border-l-4 border-slate-300 bg-slate-50 p-3 text-[15px] leading-7">
+          如是我聞。一時，佛在舍衛國<ruby>祇<rt>qí</rt></ruby>樹給孤獨園，與大比丘眾千二百五十人俱。爾時，世尊食時，著衣持<ruby>鉢<rt>bō</rt></ruby>，入舍衛大城乞食。於其城中，次第乞已，還至本處。飯食<ruby>訖<rt>qì</rt></ruby>，收衣鉢，洗足已，敷座而坐。
+        </blockquote>
+        <!-- 譯文（簡） -->
+        <blockquote class="yiwen rounded-lg border-l-4 border-amber-300 bg-amber-50 p-3 text-[15px] leading-7">
+          如是我闻：有一次，佛陀在舍卫国的祇树给孤独园，与一千二百五十位大比丘大众同在。到用餐的时候，佛陀披上袈裟，手持钵盂，走进舍卫大城托钵化缘。依次挨家化缘完毕后，返回精舍。用餐结束，佛陀收起衣钵，洗净双足，铺好座位，端然而坐。
+        </blockquote>
+      </div>
+      <!-- 備註（簡） -->
+    <aside class="note mt-3 rounded-lg border-l-4 border-sky-300 bg-sky-50 p-3 text-[14px] leading-7">
+        <p><span class="font-semibold">备注</span></p>
+        <ul class="list-disc list-inside">
+            <li>这一品交代佛陀说法的地点和人物背景。品和分在佛经中都表示章节，翻译成第一章: 说明法会缘起。</li>
+            <li>佛陀在这里是具体指悉达多·乔达摩(Siddhartha Gautama)，觉悟之后被称为Buddha, 佛陀是Buddha的音译，bud发佛，dha发陀，后来泛化指觉醒的人，悉达多出生于公元前5世纪古印度北部的迦毗罗卫国，所以被后人称为释迦牟尼佛，其中释迦是种族名称，牟尼(Muni)则是圣者的意思，合起来就是释迦族的圣人佛陀。和常山赵子龙，曲阜孔夫子大体是一个意思。</li>
+            <li>在经文中，佛陀、佛、世尊、如来常常交替使用，都是指释迦牟尼佛。</li>
+            <li>舍卫国是憍萨罗国的国都，祇陀(Jeta)是憍萨罗国国王波斯匿王的儿子，也就是太子。</li>
+            <li>给孤独是指代须达多(Sudatta)这个人，在当时是一个富翁，因为他是当时著名的大施主，布施给孤独者，所以大家成他为给孤独长者，下文的给孤独就是代指须达多这个人。</li>
+            <li>祇树给孤独园由祇陀太子和给孤独长者共同供养，这里交代了地点。</li>
+            <li>京都祇园的名字也源自祇园精舍，祇园边上的八坂神社在古代就是供奉牛头天王的佛教社。</li>
+            <li>比丘(Bhikṣu)在佛教语境中指受具足戒的男性僧人，已经正式出家修行，女众成为比丘尼。大比丘资深的僧人，大约有1250人，其中包括十大弟子 (舍利弗、目犍连、须菩提、阿难等)。</li>
+        </ul>
+        </p>
+    </aside>
+  </section>
+
+  <!-- 第二品 -->
+  <section class="rounded-2xl border border-slate-200 p-4 mt-4">
+    <h2 class="text-lg font-semibold">第二品 善現啟請分</h2>
+
+    <div class="mt-3 grid gap-3 md:grid-cols-2">
+      <!-- 原文（繁） -->
+      <blockquote class="rounded-lg border-l-4 border-slate-300 bg-slate-50 p-3 text-[15px] leading-7">
+        時，長老須菩提在大眾中，即從座起，偏袒右肩，
+        右膝著地，合掌恭敬而白佛言：「希有！世尊！如來善護念諸菩薩，善付囑諸菩薩。
+        世尊！善男子、善女人，發<ruby>阿<rt>ā</rt></ruby><ruby>耨<rt>nòu</rt></ruby><ruby>多<rt>duō</rt></ruby><ruby>羅<rt>luó</rt></ruby>
+        三<ruby>藐<rt>miǎo</rt></ruby>三<ruby>菩<rt>pú</rt></ruby><ruby>提<rt>tí</rt></ruby>心，<span
+          class="font-bold text-blue-7000 bg=yellow-100">應云何住？云何降伏其心？</span>」
+        佛言：「善哉！善哉！須菩提。如汝所說，如來善護念諸菩薩，善付囑諸菩薩。
+        汝今諦聽，當為汝說：善男子、善女人，發阿耨多羅三藐三菩提心，應如是住，如是降伏其心。」
+        須菩提言：「唯然，世尊！願樂欲聞。」
+      </blockquote>
+
+      <!-- 译文（简） -->
+      <blockquote class="yiwen rounded-lg border-l-4 border-amber-300 bg-amber-50 p-3 text-[15px] leading-7">
+        当时，长老须菩提在大众当中，立刻从座位起身，袒露右肩，右膝着地，合掌恭敬，对佛陀说：
+        “真是太难得了！世尊啊，如来您真是善于护念诸大菩萨，又善于教导和嘱托他们。世尊啊，如果有善男子、善女人，发心要成就阿耨多罗三藐三菩提心，他们的心应当如何安住? 又应当如何调伏这颗心呢？”
+        佛陀说：
+        “善哉，善哉！须菩提，如你所说，如来确实善于护念诸大菩萨，也善于教导和嘱托他们。你现在要专心谛听，我将为你解说：善男子、善女人，若发阿耨多羅三藐三菩提心，他们的心应当这样安住，应当这样降伏。”
+        须菩提回答：“唯然，世尊！我愿意，也乐意听闻。” (且听下回分解)
+      </blockquote>
+    </div>
+
+    <!-- 备注（简） -->
+    <aside class="note mt-3 rounded-lg border-l-4 border-sky-300 bg-sky-50 p-3 text-[14px] leading-7">
+      <p><span class="font-semibold">备注</span></p>
+      <ul class="list-disc list-inside">
+        <li>善现启请分中善现指须菩提，启请是恭请请问，合起来就是须菩提请佛陀开示修行人应如何安住其心、降伏其心。</li>
+        <li>善男善女：泛指所有发心修行的信众，不分出家与在家</li>
+        <li>阿耨多罗三藐三菩提心：无上正等正觉之心，即发成佛的大愿心</li>
+        <li>应云何住：心的根基问题 → 这颗心应当如何安住，不执著于色声香味触法，不被境界所动摇？王路在得到中说到这个住，是保持的意思，寺院的一把手叫住持，住持就是呆在这儿不动，我理解就是怎么让自己的初心不被环境干扰。</li>
+        <li>云何降伏其心：心的修炼问题 → 如何对治贪嗔痴、妄念和执著，让心清净自在？按今天的话说就是如何在欲望、压力、妄念中保持清净与专注。</li>
+        <li>第一问是目标和愿景（立志成佛 → 心的方向），第二问是战略和方法（如何修炼 → 心的工夫）</li>
+        <li>两问合起来，就是全经的核心：在“无住”中安住其心，在“智慧”中降伏其心</li>
+        <li>菩提：觉悟，觉醒。佛陀在无花果树下得到无上菩提，所以树被称之为菩提树，发菩提心就是立志觉悟并让一切众生也觉悟。</li>
+        <li>阿耨多罗三藐三菩提心：其中阿耨多罗是无上、最高、在没有更高的意思，三藐三是圆满、正、彻底，合起来就是：无上正等正觉之心，即最圆满、最彻底、无与伦比的觉悟。</li>
+      </ul>
+    </aside>
+  </section>
+
+    <!-- 第三品 -->
+  <section class="rounded-2xl border border-slate-200 p-4 mt-4">
+    <h2 class="text-lg font-semibold">第三品 大乘正宗分</h2>
+
+    <div class="mt-3 grid gap-3 md:grid-cols-2">
+      <!-- 原文（繁） -->
+      <blockquote class="rounded-lg border-l-4 border-slate-300 bg-slate-50 p-3 text-[15px] leading-7">
+        時，佛告須菩提：「諸菩薩摩<ruby>訶<rt>hē</rt></ruby>薩應如是降伏其心：
+        『所有一切眾生之類，若卵生，若胎生，若濕生，若化生；
+        若有色，若無色；若有想，若無想，若非有想，若非無想；
+        我皆令入無餘涅槃而滅度之。』
+        如是滅度無量、無數、無邊眾生，實無眾生得滅度者。
+        何以故？須菩提！若菩薩有我相、人相、眾生相、壽者相，
+        即非菩薩。」
+      </blockquote>
+
+      <!-- 译文（简） -->
+      <blockquote class="yiwen rounded-lg border-l-4 border-amber-300 bg-amber-50 p-3 text-[15px] leading-7">
+        那时，佛陀对须菩提说：
+        “大菩萨应当这样来降伏其心：
+        所有的一切众生，不论是卵生、胎生、湿生、化生；
+        有形色的、无形色的；
+        有思想的、无思想的，甚至既不是有思想、也不是无思想的——
+        我都要使他们进入无余涅槃，得到究竟解脱。
+        
+        然而，度脱无量无数无边的众生之后，事实上并没有一个众生真正被度脱。
+        
+        为什么呢？须菩提，如果菩萨心中还有‘我相、人相、众生相、寿者相’，那就不是真正的菩萨。”
+      </blockquote>
+    </div>
+
+    <!-- 备注（简） -->
+    <aside class="note mt-3 rounded-lg border-l-4 border-sky-300 bg-sky-50 p-3 text-[14px] leading-7">
+      <p><span class="font-semibold">备注</span></p>
+      <ul class="list-disc list-inside">
+        <li>大乘正宗分是佛陀正式回答须菩提提问的开端，进入本经核心。
+          <ul class="list-disc ml-8">
+            <li>佛陀先说：菩萨要让一切众生得到解脱。</li>
+            <li>接着说：表面上是度尽一切众生，实际上并没有一个众生被度。</li>
+            <li>最后强调：若菩萨心中还有我相、人相、众生相、寿者相，就不是真菩萨。</li>
+            <li>这里的难点：如果想着度众生不是菩萨，难道不想度众生就是菩萨吗？</li>
+            <li>正确理解：菩萨要发心度众生，却不执著有众生可度。大悲愿和空智慧必须同时具足。</li>
+            <li>举例：医生治病救人，但医生不应执著“这是我救的，你欠我一条命”。</li>
+          </ul>
+        </li>
+        <li>摩诃萨：梵语 Mahāsattva，大菩萨的意思。</li>
+        <li>四生：卵生、胎生、湿生、化生，涵盖一切众生的出生方式。</li>
+        <li>四类心识状态：有色/无色，有想/无想，乃至非有想非无想，表示各种境界的众生。</li>
+        <li>无余涅槃：彻底寂灭的境界，永不再受生死。</li>
+        <li>实无众生得灭度者：虽然发愿度尽一切，但不执著有众生被“我”度，因为一切皆空。</li>
+        <li>四相：我相、人相、众生相、寿者相，执著这四相就不是菩萨。修菩萨道必须破除这四种执著。</li>
+      </ul>
+    </aside>
+  </section>
+
+  </main>
+
+  <script>
+    const tog = (sel)=>document.querySelectorAll(sel).forEach(el=>{
+      el.classList.toggle('hidden')
+    });
+    document.getElementById('toggleYiwen').onclick=()=>tog('.yiwen');
+    document.getElementById('toggleNote').onclick=()=>tog('.note');
+    document.getElementById('toggleRuby').onclick=()=>document.querySelectorAll('rt').forEach(rt=>{
+      rt.style.display = rt.style.display==='none' ? '' : 'none';
+    });
+  </script>
+</body>
+</html>
